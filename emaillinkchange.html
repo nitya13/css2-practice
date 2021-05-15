@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: block;
+        margin: auto;
+        width: 233px;
+    }
+
+    input[type='text'] {
+        padding: 44px;
+        border: 1px solid rgb(102, 255, 0);
+    }
+
+    a[target] {
+        font-size: 44px;
+        color: crimson;
+    }
+
+    a[target='_self'] {
+        color: blue;
+        font-size: large;
+    }
+   /* this will apply css for 3rd li  */
+    /* li:nth-child(3) {
+        color: blueviolet;
+    } */
+    /* this will apply after the two li */
+    /* li:nth-child(2n+0)
+    {
+        color: chartreuse;
+    } */
+    li:nth-child(even){
+    color: chocolate;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class="form control">
+            <input type="text" placeholder='enter yor name'>
+            <input type="password" placeholder='enter yor pass'>
+            <input type="email" placeholder='enter yor email'>
+            <input type="button" placeholder="sumit">
+        </form>
+        <ul>
+            <li class="items" id="item1">items1</li>
+            <li class="item" id="item2">itme2</li>
+            <li class="items" id="item3">itme3</li>
+            <li class="items" id="item4">item4</li>
+            <li class="items" id="item5">item5</li>
+            <li class="items" id="item6">item6</li>
+            <li class="items" id="item57">item7</li>
+        </ul>
+    </div>
+</body>
+
+</html>

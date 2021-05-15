@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries</title>
+    <style>
+        .box {
+
+            text-align: center;
+            background-color: blanchedalmond;
+            color: blue;
+            font-size: large;
+            display: none;
+
+        }
+
+        @media(min-width:100px) and (max-width:300px) {
+            #box1 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media(min-width:300px) and (max-width:400px) {
+            #box2 {
+                display: block;
+                background-color: rgb(171, 226, 43);
+            }
+        }
+
+        @media(min-width:500px) and (max-width:800px) {
+            #box3 {
+                display: block;
+                background-color: rgb(43, 226, 67);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">this is first</div>
+    <div class="box" id="box2">this is second </div>
+    <div class="box" id="box3">this is third</div>
+    <div class="box" id="box4">this is forth</div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>befor and after psedoslector</title>
+   
+    <style>
+        body {
+            background-color: black;
+            color: blanchedalmond;
+            padding: 0;
+            margin: 0;
+           
+         }
+         header::before{
+            background:url("https://source.unsplash.com/user/erondu/1600x900")no-repeat center center/cover;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            position: absolute;
+            z-index:-1 ;
+            opacity:0.5
+         }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 13px 29px;
+
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        /* section::before{
+           content:"this is a content"
+       } */
+        h1 {
+            font-size: 75px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact</li>
+            </ul>
+        </nav>
+       
+    </header>
+    <section>
+        <h1>welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fuga quidem commodi omnis debitis tempore et totam, quis quaerat quae corrupti ducimus excepturi sequi expedita, ea nulla quas maiores beatae.jhgskjcjbvnbvhjsbdvmmbgadkjfjabfbgrhbnbv
+        </p>
+        </section>
+        <hr>
+
+</body>
+
+</html>
